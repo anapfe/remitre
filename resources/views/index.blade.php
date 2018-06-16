@@ -86,7 +86,7 @@
   <div class="three-features site-container margin-top-btm">
     <div class="feature">
       <div class="icon-container">
-        <i class="fa fa-truck" aria-hidden="true"></i>
+        <i class="fas fa-shipping-fast"></i>
       </div>
       <div class="text-container">
         <h5>ENVÍOS A TODO EL PAÍS</h5>
@@ -95,7 +95,7 @@
     </div>
     <div class="feature">
       <div class="icon-container">
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <i class="fas fa-map-marker-alt"></i>
       </div>
       <div class="text-container">
         <h5>EXCELENTE UBICACIÓN</h5>
@@ -104,7 +104,7 @@
     </div>
     <div class="feature">
       <div class="icon-container">
-        <i class="fa fa-credit-card" aria-hidden="true"></i>
+        <i class="far fa-credit-card"></i>
       </div>
       <div class="text-container">
         <h5>OPCIONES DE PAGO</h5>

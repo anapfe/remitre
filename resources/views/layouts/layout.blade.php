@@ -23,6 +23,7 @@
 
   <!-- Styles -->
   <link type="text/css" rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.css') }} ">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="{{ asset('css/styles.css') }}">
@@ -31,12 +32,13 @@
 </head>
 
 <body>
+
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.11';
+    js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -44,83 +46,80 @@
     <div class="border-bottom">
       <div class="site-top-bar site-container">
         <div class="site-top-bar-left">
-          <a href="mailto:correomitre@gmail.com" title="Envianos un mail" class="social-icon">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a href="http://www.facebook.com/repmitre" target="_blank" title="Seguinos en Facebook" class="social-icon">
-            <i class="fa fa-facebook"></i>
-          </a>
+          <a href="mailto:correomitre@gmail.com" title="Envianos un mail" class="social-icon"><i class="fas fa-envelope"></i></a>
+          <a href="http://www.facebook.com/repmitre" target="_blank" title="Seguinos en Facebook" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=11" title="Envianos un Whatsapp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
           <div class="header-phone">011 4760 0643</div>
         </div>
         <div class="site-top-bar-right">
           {{-- <div class="header-account">
-            <a href="http://localhost/wp_remitre/mi-cuenta/">Mi cuenta</a>
-          </div> --}}
-          <i class="fa fa-search search-btn"></i>
-        </div>
-        <div class="search-block"  style="bottom: 2px">
-          <form class="search-form" role="search" action="/productos" method="get">
-            <label>
-              <input type="search" class="search-field" name="search" value="" title="Buscar..." placeholder="Buscar...">
-            </label>
-            <input type="submit" class="search-submit" value=" ">
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="site-container site-header">
-      <div class="site-header-left">
-        <a href="/" title="REPUESTOSMITRE">
-          <img src="{{ asset('/images/header_logo.jpg') }}" alt="">
-        </a>
-      </div>
-      {{-- <div class="site-header-right">
-        <div class="header-cart">
-          <a class="header-cart-contents" href="/carrito" title="Ver carrito">
-            <span class="header-cart-amount">
-              $ 0,00 (0)
-            </span>
-            <span class="header-cart-checkout">
-              <i class="fa fa-shopping-cart"></i>
-            </span>
-          </a>
+          <a href="http://localhost/wp_remitre/mi-cuenta/">Mi cuenta</a>
         </div> --}}
+        <i class="fa fa-search search-btn"></i>
+      </div>
+      <div class="search-block"  style="bottom: 2px">
+        <form class="search-form" role="search" action="/productos" method="get">
+          <label>
+            <input type="search" class="search-field" name="search" value="" title="Buscar..." placeholder="Buscar...">
+          </label>
+          <input type="submit" class="search-submit" value=" ">
+        </form>
       </div>
     </div>
-  <div class="navigation-background">
-    <div class="main-navigation site-container">
-      <nav id="site-navigation" class="" role="navigation">
-        <button class="menu-toggle" aria-controls="menu" aria-expanded="false" type="button" name="button">Menu</button>
-        <ul id="menu-principal" class="menu nav-menu" >
-          <li>
-            <a class="menu-item1" href="/">Inicio</a>
-          </li>
-          <li>
-            <a class="menu-item1" href="#">Productos</a>
-            <ul class="submenu">
-              @foreach ($categories as $category)
-                <li>
-                  <a class="menu-item" href="#">{{ $category->name }}</a>
-                  <ul class="submenu">
-                    @foreach ($category->subcategories->sortBy('name') as $subcategory)
-                      <li>
-                        <a class="menu-item" href="/{{ $category->slug }}/{{ $subcategory->slug }}/productos">{{ $subcategory->name }}</a>
-                      </li>
-                    @endforeach
-                  </ul>
-                </li>
-              @endforeach
-            </ul>
-          </li>
-          <li>
-            <a class="menu-item1" href="https://listado.mercadolibre.com.ar/_CustId_85661130">MercadoLibre</a>
-          </li>
-        </ul>
-      </nav>
+  </div>
+  <div class="site-container site-header">
+    <div class="site-header-left">
+      <a href="/" title="REPUESTOSMITRE">
+        <img src="{{ asset('/images/header_logo.jpg') }}" alt="">
+      </a>
     </div>
+    {{-- <div class="site-header-right">
+    <div class="header-cart">
+    <a class="header-cart-contents" href="/carrito" title="Ver carrito">
+    <span class="header-cart-amount">
+    $ 0,00 (0)
+  </span>
+  <span class="header-cart-checkout">
+  <i class="fa fa-shopping-cart"></i>
+</span>
+</a>
+</div> --}}
+</div>
+</div>
+<div class="navigation-background">
+  <div class="main-navigation site-container">
+    <nav id="site-navigation" class="" role="navigation">
+      <button class="menu-toggle" aria-controls="menu" aria-expanded="false" type="button" name="button">Menu</button>
+      <ul id="menu-principal" class="menu nav-menu" >
+        <li>
+          <a class="menu-item1" href="/">Inicio</a>
+        </li>
+        <li>
+          <a class="menu-item1" href="#">Productos</a>
+          <ul class="submenu">
+            @foreach ($categories as $category)
+              <li>
+                <a class="menu-item" href="#">{{ $category->name }}</a>
+                <ul class="submenu">
+                  @foreach ($category->subcategories->sortBy('name') as $subcategory)
+                    <li>
+                      <a class="menu-item" href="/{{ $category->slug }}/{{ $subcategory->slug }}/productos">{{ $subcategory->name }}</a>
+                    </li>
+                  @endforeach
+                </ul>
+              </li>
+            @endforeach
+          </ul>
+        </li>
+        <li>
+          <a class="menu-item1" href="https://listado.mercadolibre.com.ar/_CustId_85661130">MercadoLibre</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
-  </div>
-  </div>
+</div>
+</div>
 </div>
 </header>
 
@@ -140,15 +139,18 @@
         <div class="footer-data">
           <p class="footer-data-block">
             <span class="widget-title-green">DIRECCIÓN</span>
-            av. gral san martín 2976 <br>
-            florida, vicente lopez
+            av. gral san martín 297, florida, vicente lopez
           </p>
           <p class="footer-data-block">
             <span class="widget-title-green">TELÉFONO</span>
             +54 9 11-4760-0643
           </p>
           <p class="footer-data-block">
-            <span class="widget-title-green">Horario</span>
+            <span class="widget-title-green">WHATSAPP</span>
+            +54 9 11-4928-2863
+          </p>
+          <p class="footer-data-block">
+            <span class="widget-title-green">HORARIO</span>
             lunes a viernes <br>
             8.30 a 12.00 y 15.00 a 19.00 <br>
             sábados cerrado
@@ -161,7 +163,7 @@
       </li>
       <li class="widget">
         <h2 class="widget-title">Facebook</h2>
-        <div class="fb-page" data-href="https://www.facebook.com/repMitre" data-tabs="timeline" data-width="360px" data-height="300px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/repMitre" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/repMitre">Repuestos Mitre</a></blockquote></div>
+        <div class="fb-page" data-href="https://www.facebook.com/repmitre" data-tabs="timeline" data-width="500" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/repmitre" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/repmitre">Repuestos Mitre</a></blockquote></div>
       </li>
     </ul>
   </div>
