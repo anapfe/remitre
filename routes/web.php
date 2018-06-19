@@ -17,6 +17,8 @@ Route::get('/storageLink', function () {
   \Artisan::call('storage:link');
 });
 
+Route::get('/', 'HomeController@index')->name('home');
+
 Route::group( [ 'middleware' =>'admin' ], function() {
 
   // Admin
@@ -71,7 +73,3 @@ Route::group( [ 'middleware' =>'admin' ], function() {
 Route::get('/producto/{code}', 'ProductsController@productDescription');
 Route::get('/productos', 'SearchController@search');
 Route::get('/{categorySlug}/{subcategorySlug}/productos', 'ProductsController@productBySubcategory');
-
-Auth::routes();
-
-Route::get('/', 'HomeController@index')->name('home');
