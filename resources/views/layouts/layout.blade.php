@@ -48,8 +48,8 @@
         <div class="site-top-bar-left">
           <a href="mailto:correomitre@gmail.com" title="Envianos un mail" class="social-icon"><i class="fas fa-envelope"></i></a>
           <a href="http://www.facebook.com/repmitre" target="_blank" title="Seguinos en Facebook" class="social-icon"><i class="fab fa-facebook"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=11" title="Envianos un Whatsapp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-          <div class="header-phone">011 4760 0643</div>
+          <a href="https://api.whatsapp.com/send?phone=5491149282863" title="Envianos un Whatsapp" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:+541147600643" class="header-phone">011 4760 0643</a>
         </div>
         <div class="site-top-bar-right">
           {{-- <div class="header-account">
@@ -139,31 +139,30 @@
         <div class="footer-data">
           <p class="footer-data-block">
             <span class="widget-title-green">DIRECCIÓN</span>
-            av. gral san martín 297, florida, vicente lopez
+            av. gral san martín 2976, florida, vicente lopez
           </p>
           <p class="footer-data-block">
             <span class="widget-title-green">TELÉFONO</span>
-            +54 9 11-4760-0643
+            <a href="tel:+541147600643">+54 11-4760-0643</a>
           </p>
           <p class="footer-data-block">
             <span class="widget-title-green">WHATSAPP</span>
-            +54 9 11-4928-2863
+            <a href="https://api.whatsapp.com/send?phone=5491149282863" title="Envianos un Whatsapp" target="_blank">+54 9 11-4928-2863</a>
           </p>
           <p class="footer-data-block">
             <span class="widget-title-green">HORARIO</span>
-            lunes a viernes <br>
-            8.30 a 12.00 y 15.00 a 19.00 <br>
+            lunes a viernes 8.30 - 12.00 / 15.00 - 19.00 <br>
             sábados cerrado
           </p>
           <p class="footer-data-block">
             <span class="widget-title-green">E-MAIL</span>
-            contactomitre@gmail.com
+            <a href="mailto:correomitre@gmail.com">contactomitre@gmail.com</a>
           </p>
         </div>
       </li>
       <li class="widget">
         <h2 class="widget-title">Facebook</h2>
-        <div class="fb-page" data-href="https://www.facebook.com/repmitre" data-tabs="timeline" data-width="500" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/repmitre" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/repmitre">Repuestos Mitre</a></blockquote></div>
+        <div class="fb-page" data-href="https://www.facebook.com/repmitre" data-tabs="timeline" data-width="500" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/repmitre" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/repmitre">Repuestos Mitre</a></blockquote></div>
       </li>
     </ul>
   </div>

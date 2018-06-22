@@ -53,7 +53,7 @@
             <div class="item{{ $key == 0 ? ' active' : '' }}">
                 <div class="product-slider-item">
                   <div class="slider-item-top">
-                    <a href="/producto/{{ $newProduct->id }}" title="Ver Artículo">
+                    <a href="/producto/{{ $newProduct->code }}" title="Ver Artículo">
                       <img class="slider-img" src="{{ asset ( 'storage/' . $newProduct->primary_img ) }}" alt="">
                     </a>
                   </div>
