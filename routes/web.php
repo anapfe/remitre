@@ -70,6 +70,6 @@ Route::group( [ 'middleware' =>'admin' ], function() {
   });
 });
 
-Route::get('/producto/{code}', 'ProductsController@productDescription');
+Route::get('/productos/{code}', 'ProductsController@productDescription');
 Route::get('/productos', 'SearchController@search');
 Route::get('/{categorySlug}/{subcategorySlug}/productos', 'ProductsController@productBySubcategory');

@@ -19,12 +19,12 @@
           <div class="product-ctrl-right">
             <form class="ordering" method="get">
               {{ csrf_field() }}
-              <select class="product-list-orderBy" name="orderBy">
+              {{-- <select class="product-list-orderBy" name="orderBy">
                 <option value="menu-order">Orden Predeterminado</option>
                 <option value="date">Ordenar por novedades</option>
                 <option value="price-asc">Ordenar por precio: bajo a alto</option>
                 <option value="price-desc">Ordenar por precio: alto a bajo</option>}
-              </select>
+              </select> --}}
             </form>
           </div>
         </div>
@@ -32,16 +32,20 @@
           <ul>
             @foreach ($subcategory->products as $product)
               <li class="product-card">
-                <a href="/producto/{{ $product->code }}" class="">
+                <a href="/productos/{{ $product->code }}" class="">
                   <img class="" src="{{ asset ( 'storage/' . $product->primary_img ) }}" alt="">
                   <h2 class="product-title">{{ $product->title }}
                   @foreach ($product->brands as $brand)
                     {{ $brand->name }}
                   @endforeach</h2>
                 </a>
-                <span class="product-card-price">$ {{ $product->price }},00</span>
+                {{-- <span class="product-card-price">$ {{ $product->price }},00</span> --}}
                 <p class="code">
                   Código: {{ $product->code }}
+                </p>
+                <p class="add-to-cart">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <a href="mailto:correomitre@gmail.com?subject=Solicito información del siguiente artículo&body=Hola. Les escribo para solicitarles información sobre {{ $product->title }}, código {{ $product->code }}. Gracias">Solicitar información</a>
                 </p>
                 {{-- <p class="add-to-cart">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -79,14 +83,14 @@
             </div>
           </form>
         </aside> --}}
-        <aside class="brand-filter">
+        {{-- <aside class="brand-filter">
           <select class="brand-select" name="">
             <option value="">Marca:</option>
             @foreach ($brands as $brand)
               <option value="{{ $brand->id }}">{{ $brand->name }}</option>
             @endforeach
           </select>
-        </aside>
+        </aside> --}}
 
       </div>
     </div>

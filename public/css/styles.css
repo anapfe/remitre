@@ -589,7 +589,7 @@ footer {
   color: #5E5E5E;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  line-height: 1.0em;
+  line-height: 1.2em;
   word-wrap: break-word;
   font-size: 32px;
 }
@@ -611,6 +611,7 @@ footer {
     height: 385px;
   }
   .product-desc-data {
+    margin: 0 10px;
   }
 }
 

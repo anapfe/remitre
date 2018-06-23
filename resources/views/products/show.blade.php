@@ -18,7 +18,7 @@
               @foreach ($product->brands as $brand)
                 {{ $brand->name }}
               @endforeach</h2>
-              <span class="product-desc-price">$ {{ $product->price }},00</span>
+              {{-- <span class="product-desc-price">$ {{ $product->price }},00</span> --}}
               <p class="product-desc-details">
                 Detalles: {{ $product->description }}
               </p>
@@ -36,13 +36,13 @@
         </div>
       </div>
       <div class="secondary">
-        <aside class="product-search">
+        {{-- <aside class="product-search">
           <form class="product-search-filter" action="/" method="get">
             {{ csrf_field() }}
             <input type="search" class="product-search-field" name="search" value="" placeholder="Buscar productos...">
             <input type="submit" name="search-button" value="Buscar">
           </form>
-        </aside>
+        </aside> --}}
       </div>
     </div>
   </div>

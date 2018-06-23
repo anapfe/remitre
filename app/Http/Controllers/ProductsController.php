@@ -74,6 +74,9 @@ class ProductsController extends Controller
   public function productDescription($code) {
     $categories = Category::orderBy('name', 'asc')->get();
     $product = Product::where("code", "=", $code)->first();
+    if ($product == []) {
+      return redirect('/error404');
+    }
     $product->marcas = "";
     foreach ($product->brands as $key => $brand) {
       if ( $key === 0 ) {
@@ -249,5 +252,4 @@ class ProductsController extends Controller
     $product->delete();
     return redirect('/admin/productos');
   }
-
 }

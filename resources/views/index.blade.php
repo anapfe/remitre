@@ -53,23 +53,30 @@
             <div class="item{{ $key == 0 ? ' active' : '' }}">
                 <div class="product-slider-item">
                   <div class="slider-item-top">
-                    <a href="/producto/{{ $newProduct->code }}" title="Ver Artículo">
+                    <a href="/productos/{{ $newProduct->code }}" title="Ver Artículo">
                       <img class="slider-img" src="{{ asset ( 'storage/' . $newProduct->primary_img ) }}" alt="">
                     </a>
                   </div>
                   <div class="slider-item-bottom">
                     <h3 class="product-title">
-                      <a href="/producto/{{ $newProduct->code }}" title="{{ $newProduct->title }}">{{ $newProduct->title }}
+                      <a href="/productos/{{ $newProduct->code }}" title="{{ $newProduct->title }}">{{ $newProduct->title }}
                         @foreach ($newProduct->brands as $brand)
                           {{ $brand->name }}
                         @endforeach
                       </a>
+                      <p class="product-desc-code">
+                        Código: {{ $newProduct->code }}
+                      </p>
                     </h3>
-                    <span class="product-price">${{ $newProduct->price }}</span>
+                    {{-- <span class="product-price">${{ $newProduct->price }}</span> --}}
                     {{-- <p class="add-to-cart">
                       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                       <a href="/añadir-al-carrito/{{ $newProduct->id }}"  rel="nofollow" data-product-sku="{{ $newProduct->code }}" data-quantity="1">añadir al carrito</a>
                     </p> --}}
+                    <p class="add-to-cart">
+                      <i class="fas fa-envelope" aria-hidden="true"></i>
+                      <a href="mailto:correomitre@gmail.com?subject=Solicito información del siguiente artículo&body=Hola. Les escribo para solicitarles información sobre {{ $newProduct->title }}, código {{ $newProduct->code }}. Gracias">Solicitar información</a>
+                    </p>
                   </div>
                 </div>
             </div>
