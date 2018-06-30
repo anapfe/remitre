@@ -443,13 +443,22 @@ button.menu-toggle {
 }
 @media (min-width: 768px) {
   .img-slider-wrap {
-    height: 389px;
+    height: 280px;
   }
   /* .imgCarousel {
   height: 389px;
   } */
   .img-slider {
-    height: 389px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .img-slider-wrap {
+    height: 380px;
+  }
+  .img-slider {
+    height: 380px;
   }
 }
 
@@ -952,7 +961,8 @@ footer {
 
 @media (min-width: 768px) {
   .product-slider-item {
-    width: 271.25px;
+    /* width: 250px; */
+    width: 24.9%;
   }
   .product-slider-item span {
     font-size: 15px;
