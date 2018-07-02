@@ -243,6 +243,9 @@ button.menu-toggle {
 .menu-toggle, .main-navigation.toggled .nav-menu {
   display: block;
 }
+.show {
+  display: block;
+}
 .main-navigation {
   height: auto;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);

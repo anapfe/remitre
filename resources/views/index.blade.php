@@ -87,7 +87,7 @@
       </div>
   </div>
   <div class="mega-img margin-top-btm">
-    <img class="cover" src="{{ asset('images/paralax1920x1274.jpg')}}" alt="">
+    <img class="cover" src="{{ asset('images/mega.jpg')}}" alt="">
 
   </div>
   <div class="three-features site-container margin-top-btm">
