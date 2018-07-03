@@ -66,6 +66,10 @@ img {
   height: auto;
   max-width: 100%;
 }
+.imagen {
+  height: auto;
+  width: 100%;
+}
 input[type="search"] {
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -458,10 +462,10 @@ button.menu-toggle {
 
 @media (min-width: 1280px) {
   .img-slider-wrap {
-    height: 380px;
+    height: 460px;
   }
   .img-slider {
-    height: 380px;
+    height: 460px;
   }
 }
 

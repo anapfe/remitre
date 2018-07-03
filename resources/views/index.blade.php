@@ -11,19 +11,19 @@
     <div class="imgCarousel">
       <div class="img-slider" id="img-slider">
         <div class="img-slide showing" id="1">
-          <img src="{{ asset('/images/slide1.jpg')}}">
+          <img class="imagen" src="{{ asset('/images/slide1.jpg')}}">
           <div class="img-slider-caption">
             <h3></h3>
           </div>
         </div>
         <div class="img-slide" id="2">
-          <img src="{{ asset('/images/slide2.jpg')}}">
+          <img class="imagen" src="{{ asset('/images/slide2.jpg')}}">
           <div class="img-slider-caption">
             <h3></h3>
           </div>
         </div>
         <div class="img-slide" id="3">
-          <img src="{{ asset('/images/slide3.jpg')}}">
+          <img class="imagen" src="{{ asset('/images/slide3.jpg')}}">
           <div class="img-slider-caption">
             <h3></h3>
           </div>
