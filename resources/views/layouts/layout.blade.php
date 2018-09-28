@@ -94,11 +94,11 @@
           <a class="menu-item1" href="/">Inicio</a>
         </li>
         <li>
-          <a class="menu-item1" href="#">Productos</a>
+          <a class="menu-item1" href="https://www.dropbox.com/sh/iy2olih8bnpt0sh/AABWJcwlI5p2ksY4Dza_2BzAa?dl=0">Productos</a>
           <ul class="submenu">
             @foreach ($categories as $category)
               <li>
-                <a class="menu-item" href="#">{{ $category->name }}</a>
+                <a class="menu-item">{{ $category->name }}</a>
                 <ul class="submenu">
                   @foreach ($category->subcategories->sortBy('name') as $subcategory)
                     <li>
