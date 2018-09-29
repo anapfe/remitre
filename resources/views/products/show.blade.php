@@ -14,10 +14,10 @@
             <img src="{{ asset ( 'storage/' . $product->primary_img ) }}" alt="imagen producto">
           </div>
           <div class="product-desc-data">
-            <h2 class="product-desc-title">{{ $product->title }}
+            <h1 class="product-desc-title">{{ $product->title }}
               @foreach ($product->brands as $brand)
                 {{ $brand->name }}
-              @endforeach</h2>
+              @endforeach</h1>
               {{-- <span class="product-desc-price">$ {{ $product->price }},00</span> --}}
               <p class="product-desc-details">
                 Detalles: {{ $product->description }}
