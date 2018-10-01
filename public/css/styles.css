@@ -318,7 +318,7 @@ button.menu-toggle {
   top: 0;
   float: none;
   display: block;
-    background-color: grey;
+  background-color: grey;
 }
 .main-navigation ul ul ul {
   display: none;
