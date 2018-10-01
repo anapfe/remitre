@@ -86,8 +86,8 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
       </div>
   </div>
-  <div class="mega-img margin-top-btm">
-    <img class="cover" src="{{ asset('images/mega.jpg')}}" alt="">
+  <div class="margin-top-btm">
+    <img class="mega-img cover" src="{{ asset('images/mega.jpg')}}" alt="">
 
   </div>
   <div class="three-features site-container margin-top-btm">

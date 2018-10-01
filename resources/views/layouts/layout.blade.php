@@ -137,7 +137,7 @@
         <div class="footer-data">
           <p class="footer-data-block">
             <span class="widget-title-green">DIRECCIÓN</span>
-            av. gral san martín 2976, florida, vicente lopez
+            av. gral san martín 2976, florida, vicente lópez
           </p>
           <p class="footer-data-block">
             <span class="widget-title-green">TELÉFONO</span>
@@ -149,12 +149,12 @@
           </p>
           <p class="footer-data-block">
             <span class="widget-title-green">HORARIO</span>
-            lunes a viernes 8.30 - 12.00 / 15.00 - 19.00 <br>
+            lunes a viernes 9.00 - 12.00 / 15.00 - 19.00 <br>
             sábados cerrado
           </p>
           <p class="footer-data-block">
             <span class="widget-title-green">E-MAIL</span>
-            <a href="mailto:correomitre@gmail.com">contactomitre@gmail.com</a>
+            <a href="mailto:correomitre@gmail.com">correomitre@gmail.com</a>
           </p>
         </div>
       </li>
