@@ -28,7 +28,7 @@ window.addEventListener('load', function() {
 
   // pausar slider
   var playing = true;
-  var imgCarousel = document.querySelector('.imgCarousel');
+  var imgSlider = document.querySelector('.img-slider');
 
   function pauseSlideshow() {
     playing = false;
@@ -38,7 +38,7 @@ window.addEventListener('load', function() {
     playing = true;
     slideInterval = setInterval(nextSlide,3000);
   }
-  imgCarousel.addEventListener('mouseover', function() {
+  imgSlider.addEventListener('mouseover', function() {
     if (playing === true) {
       pauseSlideshow();
     } else {

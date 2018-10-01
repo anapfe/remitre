@@ -8,28 +8,28 @@
     <div class="img-slider-next">
       <i class="fa fa-angle-right"></i>
     </div>
-    <div class="imgCarousel">
+    {{-- <div class="img-carousel"> --}}
       <div class="img-slider" id="img-slider">
-        <div class="img-slide showing" id="1">
-          <img class="imagen" src="{{ asset('/images/slide1.jpg')}}">
+        <div class="img-slide cover showing" id="1">
+          <img class="imagen cover" src="{{ asset('/images/slide1.jpg')}}">
           <div class="img-slider-caption">
-            <h3></h3>
+            {{-- <h3></h3> --}}
           </div>
         </div>
-        <div class="img-slide" id="2">
-          <img class="imagen" src="{{ asset('/images/slide2.jpg')}}">
+        <div class="img-slide cover" id="2">
+          <img class="imagen cover" src="{{ asset('/images/slide2.jpg')}}">
           <div class="img-slider-caption">
-            <h3></h3>
+            {{-- <h3></h3> --}}
           </div>
         </div>
-        <div class="img-slide" id="3">
-          <img class="imagen" src="{{ asset('/images/slide3.jpg')}}">
+        <div class="img-slide cover" id="3">
+          <img class="imagen cover" src="{{ asset('/images/slide3.jpg')}}">
           <div class="img-slider-caption">
-            <h3></h3>
+            {{-- <h3></h3> --}}
           </div>
         </div>
       </div>
-    </div>
+    {{-- </div> --}}
     <div class="img-slider-pager" style="display: block;">
       <a href="#" class="dot active">
         <span>1</span>
@@ -86,10 +86,7 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
       </div>
   </div>
-  <div class="margin-top-btm">
-    <img class="mega-img cover" src="{{ asset('images/mega.jpg')}}" alt="">
-
-  </div>
+  <div class="margin-top-btm"><img class="mega-img cover" src="{{ asset('images/mega.jpg')}}" alt="Repuestos Mitre Frente"></div>
   <div class="three-features site-container margin-top-btm">
     <div class="feature">
       <div class="icon-container">
