@@ -178,6 +178,7 @@ header {
   .site-top-bar .search-block {
     text-align: right;
     right: 20px;
+    padding: 10px 0;
   }
 }
 .site-top-bar .search-block .search-field {

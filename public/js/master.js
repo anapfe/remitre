@@ -34,13 +34,13 @@ window.addEventListener('load', function() {
     this.classList.toggle("toggled");
   });
 
-  // var menuCategories = document.querySelector('.menu-item');
-  //   menuCategories.forEach(function(element) {
-  //     element.addEventListener('click', function() {
-  //       var liParent = element.parent;
-  //       var submenu = liParent.children[1];
-  //       submenu.classList.toggle('show');
-  //     });
-  //   });
+  var menuCategories = document.querySelector('.menu-item');
+    menuCategories.forEach(function(element) {
+      element.addEventListener('click', function() {
+        var liParent = element.parent;
+        var submenu = liParent.children[1];
+        submenu.classList.toggle('show');
+      });
+    });
 
 });
