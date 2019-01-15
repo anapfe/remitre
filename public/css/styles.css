@@ -131,6 +131,7 @@ header {
   display: inline-block;
   margin: 0 10px;
   /* font-size: 13px; */
+  color: #5fc0ba;
 }
 .site-top-bar-right {
   font-size: 13px;
