@@ -1060,6 +1060,7 @@ footer {
   .active > div:first-child + div { display:block; }
 }
 @media (min-width: 992px ) {
+  .carousel { margin-top: 20px; }
   .carousel-inner .active.left { left: -18%; }
   .carousel-inner .next        { left:  18%; }
   .carousel-inner .prev		 { left: -18%; }
