@@ -47,7 +47,7 @@
         <div class="site-top-bar-left">
           <a href="mailto:correomitre@gmail.com" title="Envianos un mail" class="social-icon"><i class="fas fa-envelope"></i></a>
           <a href="http://www.facebook.com/repmitre" target="_blank" title="Seguinos en Facebook" class="social-icon"><i class="fab fa-facebook"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=5491149282863" title="Envianos un Whatsapp" target="_blank" class="header-phone social-icon"><i class="fab fa-whatsapp"></i> +54 9 11 4928 2863</a>
+          <a href="https://api.whatsapp.com/send?phone=5491149282863" title="Envianos un Whatsapp" target="_blank" class="wsap"><i class="fab fa-whatsapp my-float"></i></a>
           {{-- <a href="tel:+541147600643" class="header-phone">011 4760 0643</a> --}}
         </div>
         <div class="site-top-bar-right">
@@ -83,6 +83,7 @@
 </span>
 </a>
 </div> --}}
+
 </div>
 </div>
 <div class="navigation-background">
