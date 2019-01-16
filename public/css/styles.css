@@ -144,11 +144,18 @@ header {
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px #414144;
   z-index: 100;
+}
+.wsap:hover {
+  color: #fff;
+  background-color: #1aa84f;
 }
 .my-float {
   margin-top: 14px;
+}
+.my-float:hover {
+  color: #fff;
 }
 .site-top-bar-right {
   font-size: 13px;
