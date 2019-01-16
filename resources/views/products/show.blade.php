@@ -22,9 +22,11 @@
               <p class="product-desc-details">
                 Detalles: {{ $product->description }}
               </p>
-              <p class="product-desc-models">
-                Modelos: {{ $product->models }}
-              </p>
+              @if (property_exists($product, $product->models))
+                <p class="product-desc-models">
+                  Modelos: {{ $product->models }}
+                </p>
+              @endif
               <p class="product-desc-code">
                 Código: {{ $product->code }}
               </p>

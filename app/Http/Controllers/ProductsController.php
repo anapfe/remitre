@@ -153,10 +153,11 @@ class ProductsController extends Controller
       'code' => 'required',
       'brands' => 'required',
       'subcategory' => 'required',
+      'primary_img' => 'image|mimes:jpg,png',
     ];
     $messages = [
-      'required' => "el campo es obligatorio",
-      'numeric' => 'el campo debe ser numérico'
+      'required' => 'el campo es obligatorio',
+      'numeric' => 'el campo debe ser numérico',
     ];
 
     $request->validate($rules, $messages);

@@ -157,7 +157,7 @@
             <img class="product-img" src="{{ asset ( 'storage/' . $product->primary_img ) }}" alt="">
           </div>
           <label class="form-label" for="primary_img">Imagen Index</label>
-          <input class="upload-file" type="file" name="primary_img" id="primary_img"  >
+          <input class="upload-file" type="file" accept="image/x-png,image/gif,image/jpeg" name="primary_img" id="primary_img"  >
           @if ($errors->has('primary_img'))
             <span class="errors">
               <strong>{{ $errors->first('primary_img') }}</strong>
