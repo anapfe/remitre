@@ -161,7 +161,7 @@
       </li>
       <li class="widget">
         <h2 class="widget-title">Facebook</h2>
-        <div class="fb-page" data-href="https://www.facebook.com/repmitre" data-tabs="timeline" data-width="500" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/repmitre" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/repmitre">Repuestos Mitre</a></blockquote></div>
+        <div class="fb-page" data-href="https://www.facebook.com/repmitre" data-tabs="timeline" data-width="500" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/repmitre" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/repmitre">Repuestos Mitre</a></blockquote></div>
       </li>
     </ul>
   </div>
