@@ -56,8 +56,7 @@ window.addEventListener('load', function() {
     previousSlide();
   });
 
-
-  // //product Carousel ----------------------------------------------------------------------------------------------
+  // product Carousel ----------------------------------------------------------------------------------------------
   $('.carousel[data-type="multi"] .item').each(function(){
     var next = $(this).next();
     if (!next.length) {
@@ -72,6 +71,18 @@ window.addEventListener('load', function() {
       }
       next.children(':first-child').clone().appendTo($(this));
     }
+  });
+
+  // vacation modal ----------------------------------------------------------------------------------------------
+  var modal = document.querySelector('#Modal');
+  var span = document.querySelector('.vacation-close');
+  span.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+  window.addEventListener('click', function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    };
   });
 
 
