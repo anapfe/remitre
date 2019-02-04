@@ -286,8 +286,6 @@ header {
 
 /* modal -------------------------------------------------------------------------- */
 .vacation {
-  font-family: Roboto;
-  line-height: 45px;
   display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 100; /* Sit on top */
@@ -303,30 +301,42 @@ header {
 
 /* Modal Content */
 .vacation-content {
+  font-family: Roboto;
+  line-height: 30px;
+  font-size: 30px;
   background-color: #fefefe;
   margin: auto;
   padding: 40px;
   border: 1px solid #888;
-  width: 40%;
+  width: 80%;
   max-width: 540px;
   text-align: center;
-  font-size: 40px;
 }
-
 /* The Close Button */
 .vacation-close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 15px;
 }
-
 .vacation-close:hover,
 .vacation-close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .vacation-content {
+    width: 40%;
+    font-family: Roboto;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .vacation-close {
+    line-height: 20px;
+  }
 }
 
 /* menu -------------------------------------------------------------------------- */
