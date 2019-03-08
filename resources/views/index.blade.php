@@ -1,13 +1,13 @@
 @extends('layouts.layout')
 
 @section('content')
-  <div id="Modal" class="vacation">
+  <!–– <div id="Modal" class="vacation">
     <div class="vacation-content">
       <span class="vacation-close">&times;</span>
       <p style="font-weight: bold">CERRADO POR VACACIONES</p>
       <p>del 11/02 al 05/03</p>
     </div>
-  </div>
+  </div> ––>
   <div class="img-slider-wrap">
     <div class="img-slider-prev">
       <i class="fa fa-angle-left"></i>
