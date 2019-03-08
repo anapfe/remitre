@@ -74,7 +74,7 @@ window.addEventListener('load', function() {
   });
 
   // vacation modal ----------------------------------------------------------------------------------------------
-  var modal = document.querySelector('#Modal');
+  /*var modal = document.querySelector('#Modal');
   var span = document.querySelector('.vacation-close');
   span.addEventListener('click', function() {
     modal.style.display = 'none';
@@ -83,7 +83,7 @@ window.addEventListener('load', function() {
     if (event.target == modal) {
       modal.style.display = 'none';
     };
-  });
+  });*/
 
 
 });
