@@ -30,7 +30,7 @@
           <ul>
             @foreach ($products as $product)
               <li class="product-card">
-                <a href="/producto/{{ $product->code }}" class="">
+                <a href="/productos/{{ $product->code }}" class="">
                   <img class="" src="{{ asset ( 'storage/' . $product->primary_img ) }}" alt="">
                   <h2 class="product-title">{{ $product->title }}
                   @foreach ($product->brands as $brand)
