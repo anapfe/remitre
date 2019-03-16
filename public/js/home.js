@@ -1,6 +1,5 @@
 window.addEventListener('load', function() {
 
-
   // carousel slider ----------------------------------------------------------------------------------------------
   var slides = document.querySelectorAll('#img-slider .img-slide');
   var currentSlide = 0;

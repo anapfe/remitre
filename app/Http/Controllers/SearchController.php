@@ -10,7 +10,6 @@ use \App\Brand;
 
 class SearchController extends Controller
 {
-
   public function search() {
     $keywordsRaw = \Request::get('search');
     $keywords = explode(' ', $keywordsRaw);
@@ -53,15 +52,15 @@ class SearchController extends Controller
     $productsCount = $products->count();
     $brands = Brand::orderBy('name')->get();
     $categories = Category::orderBy('name', 'asc')->get();
-    $subcategories = Subcategory::orderBy('name', 'asc')->get();
+    $subcategory = Subcategory::orderBy('name', 'asc')->get();
     $param = [
       'products' => $products,
       'productsCount' => $productsCount,
       'keywordsRaw' => $keywordsRaw,
       'brands' => $brands,
       'categories' => $categories,
-      'subcategories' => $subcategories
+      'subcategory' => $subcategory
     ];
-    return view('search', $param);
+    return view('frontdesk.search', $param);
   }
 }

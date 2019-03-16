@@ -198,7 +198,6 @@ header {
   background-color: #ffffff;
   z-index: 96; */
 }
-
 @media (min-width: 768px) {
   .site-top-bar .search-block {
     text-align: right;
@@ -276,13 +275,11 @@ header {
   border-radius: 2px;
   color: #FFF;
 }
-
 @media (min-width:768px) {
   header {
     margin: 0 0 25px;
   }
 }
-
 
 /* modal -------------------------------------------------------------------------- */
 .vacation {
@@ -298,7 +295,6 @@ header {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Modal Content */
 .vacation-content {
   font-family: Roboto;
@@ -326,7 +322,6 @@ header {
   text-decoration: none;
   cursor: pointer;
 }
-
 @media (min-width: 600px) {
   .vacation-content {
     width: 40%;
@@ -405,6 +400,9 @@ button.menu-toggle {
   left: -999em;
   top: 0;
 }
+.categories-menu {
+  border-bottom: 1px #414144 solid;
+}
 
 @media (min-width:768px) {
   .main-navigation a {
@@ -420,6 +418,9 @@ button.menu-toggle {
     display: block;
     left: -999em;
     top: 0;
+  }
+  .categories-menu {
+    border-bottom: none;
   }
 }
 
@@ -570,7 +571,6 @@ button.menu-toggle {
     height: 380px;
   }
 }
-
 @media (min-width: 1420px) {
   .img-slider-wrap {
     height: 400px;
@@ -696,7 +696,6 @@ footer {
   .site-footer-widgets ul li:last-child {
     padding: 0px 0 20px 18px;
   }
-
 }
 
 /* products subcategory list --------------------------------------------------- */
@@ -917,7 +916,6 @@ footer {
   padding: 6px;
   width: 100%;
 }
-
 @media (min-width:768px) {
   .container {
     display: flex;
@@ -955,7 +953,7 @@ footer {
   }
 }
 
-/* product slider -------------------------------------------------------------------------- */
+/* home-product slider -------------------------------------------------------------------------- */
 .product-slider-title {
   font-size: 2em;
   text-transform: uppercase;
@@ -1079,7 +1077,6 @@ footer {
   right: 0px;
   padding: 0px 27px 0px 20px;
 }
-
 @media (min-width: 768px) {
   .product-slider-item {
     /* width: 250px; */
@@ -1157,7 +1154,7 @@ footer {
   }
 }
 
-/* aca esta la madre del borrego -------------------------------------------------------------------------- */
+/*  -------------------------------------------------------------------------- */
 @media (min-width: 768px) {
   .site-container {
     max-width: 1140px;
@@ -1242,7 +1239,7 @@ footer {
     color: white;
   }
   .main-navigation ul ul {
-    display: none; /*eliminar para cuando se puedan subir productos*/
+    display: block; /*cambiar a block para cuando se puedan subir productos*/
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.95);
     float: left;
@@ -1268,10 +1265,7 @@ footer {
   }
 }
 
-
-
 /* carusel imgs -------------------------------------------------------------------------- */
-
 .carousel-inner {
   margin: auto;
   width: 100%;

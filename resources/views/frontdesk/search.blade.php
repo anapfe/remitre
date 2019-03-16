@@ -10,21 +10,21 @@
         <div class="product-list-header">
           <h1>Resultados de: {{ $keywordsRaw }}</h1>
         </div>
+
         <div class="product-list-ctrl">
           <div class="product-ctrl-left">
             Mostrando todos los resultados ({{ $productsCount }})
           </div>
-          <div class="product-ctrl-right">
+          {{-- <div class="product-ctrl-right">
             <form class="ordering" method="get">
               {{ csrf_field() }}
               <select class="product-list-orderBy" name="orderBy">
                 <option value="menu-order">Orden Predeterminado</option>
-                <option value="date">Ordenar por novedades</option>
                 <option value="price-asc">Ordenar por precio: bajo a alto</option>
                 <option value="price-desc">Ordenar por precio: alto a bajo</option>}
               </select>
             </form>
-          </div>
+          </div> --}}
         </div>
         <div class="product-grid">
           <ul>
@@ -40,6 +40,10 @@
                 <span class="product-card-price">$ {{ $product->price }},00</span>
                 <p class="code">
                   Código: {{ $product->code }}
+                </p>
+                <p class="add-to-cart">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <a href="mailto:correomitre@gmail.com?subject=Solicito información del siguiente artículo&body=Hola. Les escribo para solicitarles información sobre {{ $product->title }}, código {{ $product->code }}. Gracias">Solicitar información</a>
                 </p>
                 {{-- <p class="add-to-cart">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>

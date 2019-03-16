@@ -90,10 +90,10 @@ class ProductsController extends Controller
       'product' => $product,
       'categories' => $categories
     ];
-    return view('products.show', $param);
+    return view('frontdesk.product', $param);
   }
 
-  // listado productos por subcategoria - desde el menu
+  // listado productos por subcategoria - desde el menu de home
   public function productBySubcategory($categorySlug, $subcategorySlug) {
     $subcategory = Subcategory::where('slug', '=', $subcategorySlug)->first();
     $categories = Category::orderBy('name', 'asc')->get();
@@ -107,7 +107,7 @@ class ProductsController extends Controller
       'productsCount' => $productsCount,
       'brands' => $brands
     ];
-    return view('subcategories.show', $param);
+    return view('frontdesk.productList', $param);
   }
 
   // crear productos

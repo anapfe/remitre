@@ -20,10 +20,8 @@ Route::get('/storageLink', function () {
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::group( [ 'middleware' =>'admin' ], function() {
-
   // Admin
   Route::get('/admin', 'HomeController@indexAdmin');
-
   Route::prefix('admin')->group(function () {
 
     // Categories
@@ -71,5 +69,6 @@ Route::group( [ 'middleware' =>'admin' ], function() {
 });
 
 Route::get('/productos/{code}', 'ProductsController@productDescription');
+//buscador de home
 Route::get('/productos', 'SearchController@search');
 Route::get('/{categorySlug}/{subcategorySlug}/productos', 'ProductsController@productBySubcategory');

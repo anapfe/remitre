@@ -90,15 +90,16 @@
   <div class="main-navigation site-container">
     <nav id="site-navigation" class="" role="navigation">
       <button class="menu-toggle" aria-controls="menu" aria-expanded="false" type="button" name="button">Menu</button>
-      <ul id="menu-principal" class="menu nav-menu" >
+      <ul id="menu-principal" class="menu nav-menu">
         <li>
           <a class="menu-item1" href="/">Inicio</a>
         </li>
         <li>
           <a class="menu-item1" href="https://www.dropbox.com/sh/iy2olih8bnpt0sh/AABWJcwlI5p2ksY4Dza_2BzAa?dl=0">Productos</a>
-          <ul class="submenu">
+          {{-- <a class="menu-item1">Productos</a> --}}
+          {{-- <ul class="submenu">
             @foreach ($categories as $category)
-              <li>
+              <li class="categories-menu">
                 <a class="menu-item">{{ $category->name }}</a>
                 <ul class="submenu">
                   @foreach ($category->subcategories->sortBy('name') as $subcategory)
@@ -109,7 +110,7 @@
                 </ul>
               </li>
             @endforeach
-          </ul>
+          </ul> --}}
         </li>
         <li>
           <a class="menu-item1" href="https://listado.mercadolibre.com.ar/_CustId_85661130">MercadoLibre</a>

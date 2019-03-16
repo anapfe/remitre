@@ -28,7 +28,7 @@ window.addEventListener('load', function() {
     console.log('error en menu');
   };
 
-  // menu mobile
+  // hamnbuerguer mobile ----------------------------------------------------------------------------------------------
   var menuDropdown = document.querySelector('.main-navigation');
   menuDropdown.addEventListener('click', function() {
     this.classList.toggle("toggled");
