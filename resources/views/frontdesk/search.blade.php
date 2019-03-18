@@ -81,14 +81,14 @@
             </div>
           </form>
         </aside> --}}
-        <aside class="brand-filter">
+        {{-- <aside class="brand-filter">
           <select class="brand-select" name="">
             <option value="">Marca:</option>
             @foreach ($brands as $brand)
               <option value="{{ $brand->id }}">{{ $brand->name }}</option>
             @endforeach
           </select>
-        </aside>
+        </aside> --}}
 
       </div>
     </div>
