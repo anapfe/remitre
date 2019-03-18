@@ -32,7 +32,7 @@
               <li class="product-card">
                 <a href="/productos/{{ $product->code }}" class="">
                   <img class="" src="{{ asset ( 'storage/' . $product->primary_img ) }}" alt="">
-                  <h2 class="product-title">{{ $product->title }}
+                  <h2 class="product-title">{{ $product->title }} {{ $product->subcategory->name }}
                   @foreach ($product->brands as $brand)
                     {{ $brand->name }}
                   @endforeach</h2>
