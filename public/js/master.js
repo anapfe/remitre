@@ -1,13 +1,15 @@
 window.addEventListener('load', function() {
 
   // search toggle ----------------------------------------------------------------------------------------------
-  var search = document.querySelector('.search-block');
+  var searchBlock = document.querySelector('.search-block');
+  var searchField = document.querySelector('.search-field');
   var searchBtn = document.querySelector('.search-btn');
   searchBtn.addEventListener('click', function() {
-    if (search.style.bottom === '2px') {
-      search.style.bottom = '-68px';
+    if (searchBlock.style.bottom === '2px') {
+      searchBlock.style.bottom = '-68px';
+      searchField.focus();
     } else {
-      search.style.bottom = '2px';
+      searchBlock.style.bottom = '2px';
     }
   });
 
