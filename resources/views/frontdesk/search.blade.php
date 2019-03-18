@@ -37,7 +37,7 @@
                     {{ $brand->name }}
                   @endforeach</h2>
                 </a>
-                <span class="product-card-price">$ {{ $product->price }},00</span>
+                {{-- <span class="product-card-price">$ {{ $product->price }},00</span> --}}
                 <p class="code">
                   Código: {{ $product->code }}
                 </p>
