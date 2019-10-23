@@ -54,7 +54,7 @@
           {{-- <div class="header-account">
           <a href="http://localhost/wp_remitre/mi-cuenta/">Mi cuenta</a>
         </div> --}}
-        <i class="fa fa-search search-btn"></i>
+        {{-- <i class="fa fa-search search-btn"></i> --}}
       </div>
       <div class="search-block"  style="bottom: 2px">
         <form class="search-form" role="search" action="/productos" method="get">
