@@ -171,6 +171,6 @@
 @yield('js')
 <script type="text/javascript" src="/js/master.js"></script>
 <script src="{{ asset('js/googlemapsapi.js') }}"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKIwKBd8DEfjMfevFfGBKIU_cWYryjUCY&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
 </body>
 </html>
